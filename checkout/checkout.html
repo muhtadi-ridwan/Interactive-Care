@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Furniro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <span class="logo-icon">⋀⋀</span>
+            Furniro
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Shop/shop.html">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/Contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="#" aria-label="User Account">
+                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 14C17.866 14 21 10.866 21 7C21 3.13401 17.866 0 14 0C10.134 0 7 3.13401 7 7C7 10.866 10.134 14 14 14Z" fill="black"/>
+                    <path d="M14 16.3333C6.7175 16.3333 0.875001 22.1758 0.875001 29.4583H27.125C27.125 22.1758 21.2825 16.3333 14 16.3333Z" fill="black"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Search">
+                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.5 26.5L19.5 19.5M22.5 11.5C22.5 17.299 17.799 22 12 22C6.20101 22 1.5 17.299 1.5 11.5C1.5 5.70101 6.20101 1 12 1C17.799 1 22.5 5.70101 22.5 11.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Wishlist">
+                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 25.5C14 25.5 1.5 19 1.5 8.5C1.5 7.71449 1.69399 6.94145 2.0709 6.25H2.07095C2.86048 4.54458 4.54197 3.5 6.375 3.5C9.15 3.5 11.55 5.4 14 8.5C16.45 5.4 18.85 3.5 21.625 3.5C23.458 3.5 25.1395 4.54458 25.929 6.25C26.306 6.94145 26.5 7.71449 26.5 8.5C26.5 19 14 25.5 14 25.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Cart">
+                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.625 7.875V5.25C9.625 3.17893 11.3039 1.5 13.375 1.5H14.625C16.6961 1.5 18.375 3.17893 18.375 5.25V7.875M3.5 7.875H24.5L23 24.5H5L3.5 7.875Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">⋀⋀</div>
+            <h1>Checkout</h1>
+            <div class="breadcrumb">
+                <a href="#">Home</a>
+                <span>›</span>
+                <a href="#">Checkout</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="checkout-container">
+            <!-- Billing Details Column -->
+            <div class="billing-details">
+                <h2>Billing details</h2>
+
+                <div class="form-row double">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="company-name">Company Name (Optional)</label>
+                    <input type="text" id="company-name" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country / Region</label>
+                    <div class="select-wrapper">
+                        <select id="country" class="form-control">
+                            <option value="sri-lanka">Sri Lanka</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="street-address">Street address</label>
+                    <input type="text" id="street-address" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="town-city">Town / City</label>
+                    <input type="text" id="town-city" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="province">Province</label>
+                    <div class="select-wrapper">
+                        <select id="province" class="form-control">
+                            <option value="western">Western Province</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="zip-code">ZIP code</label>
+                    <input type="text" id="zip-code" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="email-address">Email address</label>
+                    <input type="email" id="email-address" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="additional-info" class="form-control" placeholder="Additional information">
+                </div>
+            </div>
+
+            <!-- Order Summary Column -->
+            <div class="order-summary">
+                <h2>Product</h2>
+
+                <div class="product-list">
+                    <div class="product-item">
+                        <span class="product-name">Asgaard sofa</span>
+                        <span class="quantity">× 1</span>
+                    </div>
+                </div>
+
+                <div class="subtotal-line">
+                    <span class="label">Subtotal</span>
+                    <span class="value">Rs. 250,000.00</span>
+                </div>
+
+                <div class="total-line">
+                    <span class="label">Total</span>
+                    <span class="value highlight">Rs. 250,000.00</span>
+                </div>
+
+                <div class="payment-options">
+                    <div class="payment-option">
+                        <input type="radio" id="direct-bank" name="payment" checked>
+                        <label for="direct-bank">Direct Bank Transfer</label>
+                        <div class="payment-description">
+                            Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+                        </div>
+                    </div>
+
+                    <div class="payment-option">
+                        <input type="radio" id="bank-transfer" name="payment">
+                        <label for="bank-transfer">Direct Bank Transfer</label>
+                    </div>
+
+                    <div class="payment-option">
+                        <input type="radio" id="cash-delivery" name="payment">
+                        <label for="cash-delivery">Cash On Delivery</label>
+                    </div>
+                </div>
+
+                <div class="privacy-notice">
+                    Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy</a>.
+                </div>
+
+                <button class="place-order-button">Place order</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <div class="feature-icon">🏆</div>
+            <div class="feature-content">
+                <h3>High Quality</h3>
+                <p>crafted from top materials</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">✓</div>
+            <div class="feature-content">
+                <h3>Warranty Protection</h3>
+                <p>Over 2 years</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🚚</div>
+            <div class="feature-content">
+                <h3>Free Shipping</h3>
+                <p>Order over 150 $</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">⏰</div>
+            <div class="feature-content">
+                <h3>24 / 7 Support</h3>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-company">
+                <div class="footer-logo">Funiro.</div>
+                <div class="footer-address">
+                    400 University Drive Suite 200 Coral Gables, FL 33134 USA
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-help">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter Your Email Address">
+                    <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            2023 furino. All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
