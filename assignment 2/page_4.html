@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JOXNEWS - News Portal Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background: #fff; }
+    .main-img { width: 100%; height: 340px; object-fit: cover; border-radius: 8px; }
+    .sidebar-img { width: 60px; height: 60px; object-fit: cover; border-radius: 6px; }
+    .sidebar-item { display: flex; align-items: center; margin-bottom: 1rem; }
+    .sidebar-item .ms-2 { flex: 1; }
+    .news-title { font-size: 1.1rem; font-weight: 500; }
+    .news-meta { font-size: 0.9rem; color: #888; }
+    .section-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.2rem; }
+    .latest-img, .tech-img, .resource-img, .podcast-img { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; }
+    .editor-pick-bg, .newsletter-bg { background: #e74c3c; color: #fff; border-radius: 8px; }
+    .editor-pick-bg .section-title, .newsletter-bg .section-title { color: #fff; }
+    .staff-img { width: 60px; height: 60px; object-fit: cover; border-radius: 50%; }
+    .footer-bg { background: #181818; color: #fff; }
+    .footer-link { color: #bbb; text-decoration: none; }
+    .footer-link:hover { color: #fff; }
+    .footer-logo { font-weight: 700; font-size: 1.3rem; letter-spacing: 2px; }
+    .footer-bottom { border-top: 1px solid #333; padding-top: 1rem; margin-top: 1rem; font-size: 0.95rem; }
+    .newsletter-form input[type="email"] { border-radius: 0; }
+    .newsletter-form button { border-radius: 0; }
+    .podcast-title { font-size: 1rem; font-weight: 500; margin-top: 0.6rem; }
+    .podcast-meta { font-size: 0.9rem; color: #888; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">JOXNEWS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-4">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Technology</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Podcast</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+        </ul>
+        <form class="ms-auto d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Feature -->
+  <div class="container mt-4">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80" class="main-img mb-3" alt="Main news">
+        <h2 class="fw-bold">Global Climate Summit Yields Mixed Results on Key Agreements</h2>
+        <div class="d-flex align-items-center mt-2">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle me-2" width="36" height="36" alt="author">
+          <span class="news-meta">by Alex Morgan &middot; 2 hours ago</span>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="sidebar-item">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" class="sidebar-img" alt="">
+          <div class="ms-2">
+            <div class="news-title">AI Innovation in Healthcare</div>
+            <div class="news-meta">Tech &middot; 1h ago</div>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="sidebar-img" alt="">
+          <div class="ms-2">
+            <div class="news-title">Sports Leaders Meet in Geneva</div>
+            <div class="news-meta">Sports &middot; 3h ago</div>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" class="sidebar-img" alt="">
+          <div class="ms-2">
+            <div class="news-title">Economic Outlook 2025</div>
+            <div class="news-meta">Business &middot; 4h ago</div>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" class="sidebar-img" alt="">
+          <div class="ms-2">
+            <div class="news-title">Art Exhibition Opens</div>
+            <div class="news-meta">Culture &middot; 5h ago</div>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="sidebar-img" alt="">
+          <div class="ms-2">
+            <div class="news-title">New Tech for Remote Work</div>
+            <div class="news-meta">Tech &middot; 6h ago</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Latest News -->
+  <div class="container mt-5">
+    <div class="section-title">Latest News</div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" class="latest-img mb-2" alt="">
+        <div class="news-title">Global Business Elite Leaders Address Climate, Trade, and Energy Challenges</div>
+        <div class="news-meta">By Samantha Lee &middot; 3h ago</div>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="latest-img mb-2" alt="">
+        <div class="news-title">Breakthrough in Renewable Energy Storage Technology</div>
+        <div class="news-meta">By John Smith &middot; 4h ago</div>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" class="latest-img mb-2" alt="">
+        <div class="news-title">Healthcare Advances: New Vaccines on the Horizon</div>
+        <div class="news-meta">By Maria Lopez &middot; 5h ago</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editor's Pick -->
+  <div class="container-fluid editor-pick-bg py-5 mt-5">
+    <div class="container">
+      <div class="section-title">Editor's Pick</div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3>5G Expansion: What It Means for Consumers and Businesses</h3>
+          <div class="news-meta mb-3">By Michael Chen &middot; Today</div>
+          <p>The rollout of 5G networks is transforming connectivity, enabling faster speeds and new opportunities for businesses and consumers alike.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- More News -->
+  <div class="container mt-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" class="latest-img mb-2" alt="">
+        <div class="news-title">International Sports Event Draws Record Crowds</div>
+        <div class="news-meta">Sports &middot; 2h ago</div>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" class="latest-img mb-2" alt="">
+        <div class="news-title">Healthcare Innovations: AI-Assisted Surgery</div>
+        <div class="news-meta">Health &middot; 3h ago</div>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="latest-img mb-2" alt="">
+        <div class="news-title">Economic Shifts: The Rise of Cryptocurrency</div>
+        <div class="news-meta">Finance &middot; 4h ago</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Technology Section -->
+  <div class="container mt-5">
+    <div class="section-title">Technology</div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="tech-img mb-2" alt="">
+        <div class="news-title">5G Networks: Expanding Horizons</div>
+        <div class="news-meta">By Tech Desk</div>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="tech-img mb-2" alt="">
+        <div class="news-title">AI: The Next Frontier in Innovation</div>
+        <div class="news-meta">By Tech Desk</div>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" class="tech-img mb-2" alt="">
+        <div class="news-title">Cryptocurrency: Future of Finance?</div>
+        <div class="news-meta">By Tech Desk</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Staff Writers -->
+  <div class="container mt-5">
+    <div class="section-title">Staff Writers</div>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="d-flex align-items-center">
+          <img src="https://randomuser.me/api/portraits/men/40.jpg" class="staff-img me-3" alt="">
+          <div>
+            <div class="fw-bold">Michael Chen</div>
+            <div class="news-meta">Senior Editor</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="d-flex align-items-center">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" class="staff-img me-3" alt="">
+          <div>
+            <div class="fw-bold">Samantha Lee</div>
+            <div class="news-meta">Health Reporter</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="d-flex align-items-center">
+          <img src="https://randomuser.me/api/portraits/women/46.jpg" class="staff-img me-3" alt="">
+          <div>
+            <div class="fw-bold">Maria Lopez</div>
+            <div class="news-meta">Business Writer</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="d-flex align-items-center">
+          <img src="https://randomuser.me/api/portraits/men/47.jpg" class="staff-img me-3" alt="">
+          <div>
+            <div class="fw-bold">John Smith</div>
+            <div class="news-meta">Tech Editor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Articles & Resources -->
+  <div class="container mt-5">
+    <div class="section-title">Articles & Resources</div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80" class="resource-img mb-2" alt="">
+        <div class="news-title">5 Cutting-Edge Technologies Redefining Healthcare in 2025</div>
+        <div class="news-meta">By Health Desk</div>
+      </div>
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="resource-img mb-2" alt="">
+        <div class="news-title">The Future of Remote Work: The Shift to Flexible Workspaces</div>
+        <div class="news-meta">By Business Desk</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Signup -->
+  <div class="container-fluid newsletter-bg py-5 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="section-title">Stay informed with our latest news and updates</div>
+        </div>
+        <div class="col-md-6">
+          <form class="newsletter-form d-flex">
+            <input type="email" class="form-control me-2" placeholder="Enter your email">
+            <button class="btn btn-dark" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Podcast Section -->
+  <div class="container mt-5 mb-5">
+    <div class="section-title">Podcast</div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="podcast-img" alt="">
+        <div class="podcast-title">Sports Weekly: Highlights and Analysis</div>
+        <div class="podcast-meta">Episode 12 &middot; 30 min</div>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="podcast-img" alt="">
+        <div class="podcast-title">Tech Talks: The Future of AI</div>
+        <div class="podcast-meta">Episode 8 &middot; 45 min</div>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" class="podcast-img" alt="">
+        <div class="podcast-title">Business Pulse: Market Trends</div>
+        <div class="podcast-meta">Episode 5 &middot; 28 min</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-bg pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <div class="footer-logo mb-2">JOXNEWS</div>
+          <p>Latest news for you on politics, economy, sports, tech, and all around the globe.</p>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold">Pages</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">News</a></li>
+            <li><a href="#" class="footer-link">Technology</a></li>
+            <li><a href="#" class="footer-link">Podcast</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold">Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">About</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold">Resources</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Help</a></li>
+            <li><a href="#" class="footer-link">Privacy</a></li>
+            <li><a href="#" class="footer-link">Terms</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-bold">Follow</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Twitter</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+            <li><a href="#" class="footer-link">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom text-center mt-3">
+        &copy; 2025 JOXNEWS. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
