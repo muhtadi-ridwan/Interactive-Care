@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dropdown Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      padding-left: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #1e1e1e;
+      font-family: sans-serif;
+    }
+
+    nav {
+      background-color: #ff3300;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      position: relative;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav > ul > li {
+      padding: 15px 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+    }
+
+    nav ul li:hover {
+      background-color: black;
+    }
+
+    /* First-level dropdown */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #ff3300;
+      min-width: 150px;
+      z-index: 1;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    nav ul li ul li {
+      width: 100%;
+    }
+
+    /* Second-level dropdown */
+    nav ul li ul li ul {
+      left: 100%;
+      top: 0;
+      display: none;
+      position: absolute;
+    }
+
+    nav ul li ul li:hover > ul {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">WordPress</a>
+      <ul>
+        <li><a href="#">Themes</a></li>
+        <li><a href="#">Plugins</a></li>
+        <li><a href="#">Tutorials</a>
+          <ul>
+            <li><a href="#">Stuff</a></li>
+            <li><a href="#">Things</a></li>
+            <li><a href="#">Other Stuff</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#">Graphic Design</a></li>
+    <li><a href="#">Inspiration</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>

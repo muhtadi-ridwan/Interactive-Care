@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thatix Recipes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Thatix</div>
+    <h1>Search Your<br><strong>Favorite Recipe</strong></h1>
+    <p>A handful of simple ingredients typify the fresh, vibrant flavors of Greek cooking</p>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search...">
+  
+<button id="searchButton">
+      <img src="img/search.png" alt="Search" class="search-icon" />
+</button>
+
+    </div>
+  </header>
+
+  <main>
+    <h2>Latest Recipes</h2>
+    <div class="grid" id="recipeGrid"></div>
+  </main>
+
+  <div class="details-modal" id="detailsModal">
+    <div class="details-card" id="detailsCard">
+      <button class="close-btn" onclick="closeModal()">✕</button>
+      <div id="detailsContent"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright © 2023 – All right reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

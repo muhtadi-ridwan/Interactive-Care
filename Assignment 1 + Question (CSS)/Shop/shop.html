@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro - Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav-container">
+                <div class="logo">
+                    <img src="/img/logo.png" alt="logo">
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Shop/shop.html" class="active">Shop</a></li>
+                    <li><a href="/Blog/blog.html" class="active">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="/Contact/contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-icons">
+                    <a href="#" class="icon-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M20 20C20 16.6863 16.4183 14 12 14C7.58172 14 4 16.6863 4 20" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.3314 12.0474L12 20L19.6686 12.0474C20.5211 11.1633 21 9.96429 21 8.71405C21 6.11055 18.9648 4 16.4543 4C15.2487 4 14.0925 4.49666 13.24 5.38071L12 6.66667L10.76 5.38071C9.90749 4.49666 8.75128 4 7.54569 4C5.03517 4 3 6.11055 3 8.71405C3 9.96429 3.47892 11.1633 4.3314 12.0474Z" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 11V7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7V11M5 11H19L20 21H4L5 11Z" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-banner" style="background-image: url('/img/hero-background.jpg'); background-size: fill; background-position: center; color: white; padding: 20px;">
+            <div class="container" >
+            
+                <h2>
+                    Shop
+                </h2>
+                
+                
+                <div class="breadcrumb">
+                    <a href="/index.html">Home</a> &gt; <span>Shop</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <div class="filter-options">
+                        <button class="filter-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6H20M7 12H17M9 18H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            Filter
+                        </button>
+                        <button class="view-grid">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </button>
+                        <button class="view-list">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 6H21M3 12H21M3 18H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="showing-info">
+                        <p>Showing 1–16 of 32 results</p>
+                    </div>
+                    <div class="sort-options">
+                        <div class="show-option">
+                            <span>Show</span>
+                            <select>
+                                <option>16</option>
+                            </select>
+                        </div>
+                        <div class="sort-by">
+                            <span>Sort by</span>
+                            <select>
+                                <option>Default</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Row 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c1.png" alt="Syltherine">
+                            <div class="discount-tag">-30%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Syltherine</h3>
+                            <p>Stylish cafe chair</p>
+                            <div class="price">
+                                <span class="current-price">Rp 2.500.000</span>
+                                <span class="old-price">Rp 3.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                                
+                                <a href="/Product_page/productpage.html"><img src="/img/card/c2.png" alt="Leviosa"></a>
+
+                            <div class="add-to-cart">
+                                <button>Add to cart</button>
+                            </div>
+                            <div class="product-actions">
+                                <a href="#">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M8.59 13.51L15.42 17.49" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M15.41 6.51L8.59 10.49" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 11L12 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path d="M12.5 5C12.5 5.27614 12.2761 5.5 12 5.5C11.7239 5.5 11.5 5.27614 11.5 5C11.5 4.72386 11.7239 4.5 12 4.5C12.2761 4.5 12.5 4.72386 12.5 5Z" stroke="currentColor"/>
+                                        <path d="M7 11H17V16C17 18.7614 14.7614 21 12 21C9.23858 21 7 18.7614 7 16V11Z" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M16 11H19C20.1046 11 21 10.1046 21 9V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V9C3 10.1046 3.89543 11 5 11H8" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.3314 12.0474L12 20L19.6686 12.0474C20.5211 11.1633 21 9.96429 21 8.71405C21 6.11055 18.9648 4 16.4543 4C15.2487 4 14.0925 4.49666 13.24 5.38071L12 6.66667L10.76 5.38071C9.90749 4.49666 8.75128 4 7.54569 4C5.03517 4 3 6.11055 3 8.71405C3 9.96429 3.47892 11.1633 4.3314 12.0474Z" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Asgaard Sofa</h3>
+                            <p>Stylish cafe chair</p>
+                            <div class="price">
+                                <span class="current-price">Rp 2.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c3.png" alt="Lolito">
+                            <div class="discount-tag discount-large">-50%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Lolito</h3>
+                            <p>Luxury big sofa</p>
+                            <div class="price">
+                                <span class="current-price">Rp 7.000.000</span>
+                                <span class="old-price">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c8.png" alt="Respira">
+                            <div class="new-tag">New</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Respira</h3>
+                            <p>Outdoor bar table and stool</p>
+                            <div class="price">
+                                <span class="current-price">Rp 500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c4.png" alt="Syltherine">
+                            <div class="discount-tag">-30%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Syltherine</h3>
+                            <p>Stylish cafe chair</p>
+                            <div class="price">
+                                <span class="current-price">Rp 2.500.000</span>
+                                <span class="old-price">Rp 3.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c5.png" alt="Leviosa">
+                        </div>
+                        <div class="product-info">
+                            <h3>Leviosa</h3>
+                            <p>Stylish cafe chair</p>
+                            <div class="price">
+                                <span class="current-price">Rp 2.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c6.png" alt="Lolito">
+                            <div class="discount-tag discount-large">-50%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Lolito</h3>
+                            <p>Luxury big sofa</p>
+                            <div class="price">
+                                <span class="current-price">Rp 7.000.000</span>
+                                <span class="old-price">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c7.png" alt="Respira">
+                            <div class="new-tag">New</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Respira</h3>
+                            <p>Outdoor bar table and stool</p>
+                            <div class="price">
+                                <span class="current-price">Rp 500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c8.png" alt="Syltherine">
+                            <div class="discount-tag">-30%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Syltherine</h3>
+                            <p>Stylish cafe chair</p>
+                            <div class="price">
+                                <span class="current-price">Rp 2.500.000</span>
+                                <span class="old-price">Rp 3.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c9.png" alt="Leviosa">
+                        </div>
+                        <div class="product-info">
+                            <h3>Leviosa</h3>
+                            <p>Stylish cafe chair</p>
+                            <div class="price">
+                                <span class="current-price">Rp 2.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c10.png" alt="Lolito">
+                            <div class="discount-tag discount-large">-50%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Lolito</h3>
+                            <p>Luxury big sofa</p>
+                            <div class="price">
+                                <span class="current-price">Rp 7.000.000</span>
+                                <span class="old-price">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c11.png" alt="Respira">
+                            <div class="new-tag">New</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Respira</h3>
+                            <p>Outdoor bar table and stool</p>
+                            <div class="price">
+                                <span class="current-price">Rp 500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c1.png" alt="Syltherine">
+                            <div class="discount-tag">-30%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Syltherine</h3>
+                            <p>Stylish cafe chair</p>
+                            <div class="price">
+                                <span class="current-price">Rp 2.500.000</span>
+                                <span class="old-price">Rp 3.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c3.png" alt="Leviosa">
+                        </div>
+                        <div class="product-info">
+                            <h3>Leviosa</h3>
+                            <p>Stylish cafe chair</p>
+                            <div class="price">
+                                <span class="current-price">Rp 2.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c4.png" alt="Lolito">
+                            <div class="discount-tag discount-large">-50%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Lolito</h3>
+                            <p>Luxury big sofa</p>
+                            <div class="price">
+                                <span class="current-price">Rp 7.000.000</span>
+                                <span class="old-price">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/card/c5.png" alt="Respira">
+                            <div class="new-tag">New</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Respira</h3>
+                            <p>Outdoor bar table and stool</p>
+                            <div class="price">
+                                <span class="current-price">Rp 500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="next">Next</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="feature-grid">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 15L8.5 10L15.5 10L12 15Z" fill="#B88E2F"/>
+                                <path d="M12 4L19 17H5L12 4Z" stroke="#B88E2F" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>High Quality</h3>
+                            <p>Crafted from top materials</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#B88E2F" stroke-width="1.5"/>
+                                <path d="M12 6V12L16 14" stroke="#B88E2F" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Warranty Protection</h3>
+                            <p>Over 2 years</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 22V11M19 22V11M3 9H21M5 7L12 2L19 7" stroke="#B88E2F" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Free Shipping</h3>
+                            <p>Order over 150 $</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="#B88E2F" stroke-width="1.5"/>
+                                <path d="M12 6V12H16" stroke="#B88E2F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>24 / 7 Support</h3>
+                            <p>Dedicated support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Furniro.</h2>
+                    <address>
+                        400 University Drive Suite 200 Coral<br>
+                        Gables,<br>
+                        FL 33134 USA
+                    </address>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-menu">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="#">Payment Options</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Privacy Policies</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <form>
+                            <input type="email" placeholder="Enter Your Email Address">
+                            <button type="submit">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>2023 furino. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

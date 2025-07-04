@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro (Home)</title>
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="logo">
+            </a>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Shop/shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Blog/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contact/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-icons">
+                <a href="#">
+                    <img src="./img/nav/man.png" alt="profile icon">
+                </a>
+                <a href="#">
+                    <img src="./img/nav/search.png" alt="search icon">
+                </a>
+                <a href="#">
+                    <img src="./img/nav/wishlist.png" alt="wishlist icon">
+                </a>
+                <a href="/checkout/checkout.html">
+                    <img src="./img/nav/cart.png" alt="cart icon">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" id="toggleButton">
+                <i class='bx bx-menu fs-1'></i>
+            </button>
+        </div>
+    </nav>
+
+    <div id="hero">
+        <div class="new-arrival-sec">
+            <h6 class="semibold">New Arrival</h6>
+            <h3>
+                Discover Our <br> New Collection
+            </h3>
+
+            <p class="semibold">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+            </p>
+
+            <a href="#" class="btn-primary">BUY NOW</a>
+        </div>
+    </div>
+
+
+
+    <div class="container browse">
+        <div class="row">
+            <div class="browse-content text-center">
+                <h3 class="bold">Browse The Range</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="col-3">
+                <div class="card">
+                    <img src="./img/card/c1.png" class="card-img" alt="Dining">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dining</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card">
+                    <img src="./img/card/c2.png" class="card-img" alt="Living">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Living</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card">
+                    <img src="./img/card/c3.png" class="card-img" alt="Bedroom">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bedroom</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container product">
+        <div class="row">
+            <div class="product-content text-center">
+                <h3 class="bold">Our Products</h3>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <p class="discount">-30%</p>
+                    <img src="./img/card/c4.png" class="card-img" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title semibold">Syltherine</h5>
+                        <p class="card-text secondary">Stylish cafe chair</p>
+
+                        <div class="price-container">
+                            <p class="semibold price">Rp 2.500.000</p>
+                            <strike class="secondary">Rp 3.500.000</strike>
+                        </div>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <div class="card-content">
+                        <a href="cart.html">Add to cart</a>
+
+                        <div class="share-content">
+                            <p class="light flex-center">
+                                <i class='bx bx-share-alt'></i> share
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-transfer'></i> Compare
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-heart'></i> Like
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <p class="discount">-40%</p>
+                    <img src="./img/card/c5.png" class="card-img" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title semibold">Leviosa</h5>
+                        <p class="card-text secondary">Stylish cafe chair</p>
+
+                        <div class="price-container">
+                            <p class="semibold price">Rp 2.500.000</p>
+                        </div>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <div class="card-content">
+                        <a href="#">Add to cart</a>
+
+                        <div class="share-content">
+                            <p class="light flex-center">
+                                <i class='bx bx-share-alt'></i> share
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-transfer'></i> Compare
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-heart'></i> Like
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <p class="discount">-50%</p>
+                    <img src="./img/card/c6.png" class="card-img" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title semibold">Lolito</h5>
+                        <p class="card-text secondary">Luxury big sofa</p>
+
+                        <div class="price-container">
+                            <p class="semibold price">Rp 7.000.000</p>
+                            <strike class="secondary">Rp 3.500.000</strike>
+                        </div>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <div class="card-content">
+                        <a href="#">Add to cart</a>
+
+                        <div class="share-content">
+                            <p class="light flex-center">
+                                <i class='bx bx-share-alt'></i> share
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-transfer'></i> Compare
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-heart'></i> Like
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <p class="discount discount-menu">New</p>
+                    <img src="./img/card/c7.png" class="card-img" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title semibold">Respira</h5>
+                        <p class="card-text secondary">Outdoor bar table and stool</p>
+
+                        <div class="price-container">
+                            <p class="semibold price">Rp 5.000.000</p>
+                            <strike class="secondary">Rp 3.500.000</strike>
+                        </div>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <div class="card-content">
+                        <a href="#">Add to cart</a>
+
+                        <div class="share-content">
+                            <p class="light flex-center">
+                                <i class='bx bx-share-alt'></i> share
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-transfer'></i> Compare
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-heart'></i> Like
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <p class="discount">-30%</p>
+                    <img src="./img/card/c8.png" class="card-img" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title semibold">Grifo</h5>
+                        <p class="card-text secondary">Stylish cafe chair</p>
+
+                        <div class="price-container">
+                            <p class="semibold price">Rp 2.500.000</p>
+                            <strike class="secondary">Rp 3.500.000</strike>
+                        </div>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <div class="card-content">
+                        <a href="#">Add to cart</a>
+
+                        <div class="share-content">
+                            <p class="light flex-center">
+                                <i class='bx bx-share-alt'></i> share
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-transfer'></i> Compare
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-heart'></i> Like
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <p class="discount">-40%</p>
+                    <img src="./img/card/c9.png" class="card-img" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title semibold">Muggo</h5>
+                        <p class="card-text secondary">Stylish cafe chair</p>
+
+                        <div class="price-container">
+                            <p class="semibold price">Rp 2.500.000</p>
+                            <strike class="secondary">Rp 3.500.000</strike>
+                        </div>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <div class="card-content">
+                        <a href="#">Add to cart</a>
+
+                        <div class="share-content">
+                            <p class="light flex-center">
+                                <i class='bx bx-share-alt'></i> share
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-transfer'></i> Compare
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-heart'></i> Like
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <p class="discount">-50%</p>
+                    <img src="./img/card/c10.png" class="card-img" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title semibold">Pingky</h5>
+                        <p class="card-text secondary">Stylish cafe chair</p>
+
+                        <div class="price-container">
+                            <p class="semibold price">Rp 2.500.000</p>
+                            <strike class="secondary">Rp 3.500.000</strike>
+                        </div>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <div class="card-content">
+                        <a href="#">Add to cart</a>
+
+                        <div class="share-content">
+                            <p class="light flex-center">
+                                <i class='bx bx-share-alt'></i> share
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-transfer'></i> Compare
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-heart'></i> Like
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <p class="discount discount-menu">New</p>
+                    <img src="./img/card/c11.png" class="card-img" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title semibold">Potty</h5>
+                        <p class="card-text secondary">Stylish cafe chair</p>
+
+                        <div class="price-container">
+                            <p class="semibold price">Rp 2.500.000</p>
+                            <strike class="secondary">Rp 3.500.000</strike>
+                        </div>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <div class="card-content">
+                        <a href="#">Add to cart</a>
+
+                        <div class="share-content">
+                            <p class="light flex-center">
+                                <i class='bx bx-share-alt'></i> share
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-transfer'></i> Compare
+                            </p>
+
+                            <p class="light flex-center">
+                                <i class='bx bx-heart'></i> Like
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="show-more-container text-center">
+            <a href="#" class="btn-show-more">Show More</a>
+        </div>
+    </div>
+
+    <div class="slider-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="slider-content">
+                        <h3 class="semibold">
+                            50+ Beautiful rooms <br> inspiration
+                        </h3>
+
+                        <p>
+                            Our designer already made a lot of beautiful prototipe of rooms that inspire you
+                        </p>
+
+                        <a href="#" class="explore-btn">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="./img/slider/s1.png" class="card-img" alt="...">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="./img/slider/s2.png" class="card-img" alt="...">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="./img/card/c1.png" class="card-img" alt="...">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="./img/card/c2.png" class="card-img" alt="...">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="./img/card/c3.png" class="card-img" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container footer">
+            <div class="row border-bottom">
+                <div class="col-4">
+                    <div class="footer-content-1">
+                        <a href="index.html">
+                            <img src="./img/logo2.png" alt="logo">
+                        </a>
+
+                        <div class="address-content">
+                            <p class="secondary">400 University Drive Suite 200 Coral</p>
+                            <p class="secondary">Gables,</p>
+                            <p class="secondary">FL 33134 USA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="secondary">Links</p>
+                        </li>
+                        <li><a href="index.html" class="semibold black">Home</a></li>
+                        <li><a href="/Shop/shop.html" class="semibold black">Shop</a></li>
+                        <li><a href="/Contact/contact.html" class="semibold black">Contact</a></li>
+                        <li><a href="/Blog/blog.html" class="semibold black">Blog</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="col-2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="secondary">Links</p>
+                        </li>
+                        <li><a href="#" class="semibold black">Payment Options</a></li>
+                        <li><a href="#" class="semibold black">Returns</a></li>
+                        <li><a href="#" class="semibold black">Privacy Policies</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="secondary">Newsletter</p>
+                        </li>
+                    </ul>
+
+
+                    <form>
+                        <input type="email" name="" id="" placeholder="Enter Your E-mail Address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="copyright-sec">
+                <p>2023 furino. All rights reverved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

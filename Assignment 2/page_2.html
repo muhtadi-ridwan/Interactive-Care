@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News Portal Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .highlight { background: #f6b288; }
+    .section-title { font-weight: bold; font-size: 1.5rem; margin-bottom: 1rem; }
+    .editor-pick { background: #fff; border-radius: 8px; box-shadow: 0 2px 6px #eee; padding: 1.5rem; }
+    .team-img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
+    .podcast-img { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; }
+    .footer-bg { background: #222; color: #fff; }
+    .footer-link { color: #bbb; text-decoration: none; }
+    .footer-link:hover { color: #fff; }
+    .news-badge { font-size: 0.8rem; }
+    .main-img { width: 100%; height: 320px; object-fit: cover; border-radius: 8px; }
+    .sidebar-list li { margin-bottom: 0.5rem; }
+    .latest-news-img, .tech-img { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; }
+    .orange-bg { background: #f6b288; }
+  </style>
+</head>
+<body style="background:#fafbfc;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">KIVZO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-4">
+          <li class="nav-item"><a class="nav-link" href="#">Sections</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Podcast</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Editorial</a></li>
+        </ul>
+        <form class="ms-auto d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Feature -->
+  <div class="container mt-4">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" class="main-img mb-2" alt="Main news">
+        <h3 class="fw-bold">Revolutionizing manufacturing emerging trends shaping the industry</h3>
+        <span class="badge bg-primary news-badge">Featured</span>
+      </div>
+      <div class="col-lg-4">
+        <ul class="list-group sidebar-list">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>AI in manufacturing: new challenges</span>
+            <span class="badge bg-warning">Tech</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>Women leading the way in engineering</span>
+            <span class="badge bg-success">People</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>How automation is transforming work</span>
+            <span class="badge bg-info">Automation</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>Green energy for industry</span>
+            <span class="badge bg-danger">Energy</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="row mt-4 g-3">
+      <div class="col-6 col-md-2">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Editor's Pick -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="editor-pick">
+          <span class="badge bg-primary mb-2">Editor's Pick</span>
+          <h5>AI at core of pioneering next-gen engineering</h5>
+          <p class="mb-1 text-muted">Today</p>
+          <p>The influence of youth across designers and technologists is shaping future trends.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Latest News -->
+  <div class="orange-bg py-4 mt-5">
+    <div class="container">
+      <div class="section-title">Latest News</div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" class="latest-news-img mb-2" alt="">
+          <h6>New automation tools in printing</h6>
+          <p class="small text-muted">How tech is streamlining production lines.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="latest-news-img mb-2" alt="">
+          <h6>Robotics at new heights</h6>
+          <p class="small text-muted">Latest breakthroughs in industrial robots.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" class="latest-news-img mb-2" alt="">
+          <h6>Green energy for factories</h6>
+          <p class="small text-muted">Sustainable solutions for modern manufacturing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Technology Section -->
+  <div class="container mt-5">
+    <div class="section-title">Technology</div>
+    <div class="row g-3">
+      <div class="col-md-3">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="tech-img mb-2" alt="">
+        <h6>Smart vehicles in industry</h6>
+      </div>
+      <div class="col-md-3">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" class="tech-img mb-2" alt="">
+        <h6>The future of AI and robotics</h6>
+      </div>
+      <div class="col-md-3">
+        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" class="tech-img mb-2" alt="">
+        <h6>Augmented reality in manufacturing</h6>
+      </div>
+      <div class="col-md-3">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" class="tech-img mb-2" alt="">
+        <h6>Future-focused and in-depth look at cutting-edge tech trends</h6>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Team -->
+  <div class="container mt-5">
+    <div class="section-title">Our Editorial Team</div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="team-img" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Mark Johnson</h6>
+            <p class="card-text small text-muted">Senior Editor</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" class="team-img" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Sarah Lee</h6>
+            <p class="card-text small text-muted">Tech Editor</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://randomuser.me/api/portraits/men/55.jpg" class="team-img" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Ethan Edwards</h6>
+            <p class="card-text small text-muted">Features Writer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Podcast Section -->
+  <div class="container mt-5 mb-5">
+    <div class="section-title">Podcast</div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" class="podcast-img mb-2" alt="">
+        <h6>Conversation beyond borders: insights, ideas and inspiring journeys</h6>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="podcast-img mb-2" alt="">
+        <h6>Beyond the imagination: ideas, stories, and innovation</h6>
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" class="podcast-img mb-2" alt="">
+        <h6>The change makers: inspiring stories of a new generation</h6>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-bg py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">KIVZO</h5>
+          <p>Stay updated with the latest news, stories, and insights from around the globe.</p>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold">Pages</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">Categories</a></li>
+            <li><a href="#" class="footer-link">Resources</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold">Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">About</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold">Resources</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Help</a></li>
+            <li><a href="#" class="footer-link">Privacy</a></li>
+            <li><a href="#" class="footer-link">Terms</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold">Follow</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Twitter</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+            <li><a href="#" class="footer-link">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-3 small text-muted">
+        &copy; 2025 KIVZO. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
