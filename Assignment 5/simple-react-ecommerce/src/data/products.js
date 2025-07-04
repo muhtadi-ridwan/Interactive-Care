@@ -41,6 +41,35 @@ const products = [
     price: 199.99,
     image: "https://via.placeholder.com/300x200?text=Tablet",
   },
+    {
+    id: 7,
+    title: "Laptop",
+    description: "Versatile tablet for work and play.",
+    price: 1999.99,
+    image: "https://via.placeholder.com/300x200?text=Tablet",
+  },
+    {
+    id: 8,
+    title: "Monitor",
+    description: "Versatile tablet for work and play.",
+    price: 199.99,
+    image: "https://via.placeholder.com/300x200?text=Tablet",
+  },
+    {
+    id: 9,
+    title: "Keyboard",
+    description: "Versatile tablet for work and play.",
+    price: 199.99,
+    image: "https://via.placeholder.com/300x200?text=Tablet",
+  },
+    {
+    id: 10,
+    title: "Mouse",
+    description: "Versatile tablet for work and play.",
+    price: 199.99,
+    image: "https://via.placeholder.com/300x200?text=Tablet",
+  },
+  
 ];
 
 export default products;
