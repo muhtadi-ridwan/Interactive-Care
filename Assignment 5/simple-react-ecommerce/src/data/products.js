@@ -1,73 +1,86 @@
+import headphonesImg from '../asset/headphone.jpg';
+import tablerImg from '../asset/tabler.webp';
+import laptopImg from '../asset/laptop.jpg';
+import mouseImg from '../asset/mouse.webp';
+import keyboardImg from '../asset/keyboard.jpg';
+import monitorImg from '../asset/monitor.jpeg';
+import speakerImg from '../asset/speaker.jpeg';
+import ereaderImg from '../asset/ereader.jpeg';
+import watchImg from '../asset/watch.jpeg';
+import fitwatchImg from '../asset/fitwatch.jpg';
+
+
+
 const products = [
   {
     id: 1,
     title: "Wireless Headphones",
     description: "High-quality wireless headphones with noise cancellation.",
     price: 99.99,
-    image: "https://via.placeholder.com/300x200?text=Headphones",
+    image: headphonesImg,
   },
   {
     id: 2,
     title: "Smart Watch",
     description: "Track your fitness and notifications in style.",
     price: 149.99,
-    image: "https://via.placeholder.com/300x200?text=Smart+Watch",
+    image: watchImg,
   },
   {
     id: 3,
     title: "Bluetooth Speaker",
     description: "Portable speaker with excellent sound quality.",
     price: 79.99,
-    image: "https://via.placeholder.com/300x200?text=Speaker",
+    image:speakerImg,
   },
   {
     id: 4,
     title: "Fitness Tracker",
     description: "Monitor your health and activity.",
     price: 59.99,
-    image: "https://via.placeholder.com/300x200?text=Fitness+Tracker",
+    image: fitwatchImg,
   },
   {
     id: 5,
     title: "E-Reader",
     description: "Read your favorite books on the go.",
-    price: 129.99,
-    image: "https://via.placeholder.com/300x200?text=E-Reader",
+    price: 290.99,
+    image: ereaderImg,
   },
   {
     id: 6,
     title: "Tablet",
     description: "Versatile tablet for work and play.",
-    price: 199.99,
-    image: "https://via.placeholder.com/300x200?text=Tablet",
+    price: 1200.99,
+    image: tablerImg,
   },
     {
     id: 7,
     title: "Laptop",
     description: "Versatile tablet for work and play.",
     price: 1999.99,
-    image: "https://via.placeholder.com/300x200?text=Tablet",
+    image:laptopImg,
   },
     {
     id: 8,
     title: "Monitor",
     description: "Versatile tablet for work and play.",
-    price: 199.99,
-    image: "https://via.placeholder.com/300x200?text=Tablet",
+    price: 259.99,
+    image: monitorImg,
   },
     {
     id: 9,
     title: "Keyboard",
     description: "Versatile tablet for work and play.",
-    price: 199.99,
-    image: "https://via.placeholder.com/300x200?text=Tablet",
+    price: 39.99,
+    image: keyboardImg,
   },
     {
     id: 10,
     title: "Mouse",
     description: "Versatile tablet for work and play.",
-    price: 199.99,
-    image: "https://via.placeholder.com/300x200?text=Tablet",
+    price: 29.99,
+    image: mouseImg,
   },
   
 ];
